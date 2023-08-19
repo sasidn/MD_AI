@@ -12,7 +12,7 @@
         }
 
         .container {
-            max-width: 720px;
+            max-width: 750px;
             margin: 0 auto;
             padding: 20px;
             background-color: #D9DCD6;
@@ -64,11 +64,18 @@
         .proceed-button {
             margin-top: 20px;
         }
+        #logo {
+        position: absolute;
+        top: 0px;
+        left: 330px;
+        width: 120px; /* Adjust the width of the logo as needed */
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Select a model to proceed</h1>
+        <img id="logo" src="{{ url_for('static', filename='imgs/MindNexLog.png') }}" alt="MindNex Logo">
         <div class="model-container">
             <div class="model-card selected" onclick="selectModel('ChatGPT', this)">
                 <p>ChatGPT</p>
@@ -76,8 +83,8 @@
             <div class="model-card" onclick="selectModel('Blenderbot', this)">
                 <p>Blenderbot</p>
             </div>
-            <div class="model-card" onclick="selectModel('Dialogpt', this)">
-                <p>Dialogpt</p>
+            <div class="model-card" onclick="selectModel('DialoGPT', this)">
+                <p>DialoGPT</p>
             </div>
             <div class="model-card" onclick="selectModel('Rule Based', this)">
                 <p>Rule Based</p>
@@ -108,15 +115,15 @@
         element.classList.add('selected');
 
         if (model === 'ChatGPT') {
-            modelDescription.innerHTML = "<p>Description: ChatGPT is a conversational AI model developed by OpenAI. It uses natural language processing techniques to generate human-like responses in chat-based scenarios.</p>";
-        } else if (model === 'Transformer') {
-            modelDescription.innerHTML = "<p>Description: Transformer is a deep learning model architecture that has been widely used in natural language processing tasks. It employs self-attention mechanisms to capture relationships between words in an input sequence.</p>";
-        } else if (model === 'Dialogpt') {
-            modelDescription.innerHTML = "<p>Description: Dialogpt is a language model specifically designed for generating dialogues. It can be used to simulate conversations between a user and an AI agent or to provide contextual responses in chatbot applications.</p>";
+            modelDescription.innerHTML = "<p>ChatGPT is an AI-powered conversational model developed by OpenAI. It's based on a type of technology called \"transformer neural networks.\" These networks are trained on massive amounts of text data to understand language patterns and generate coherent responses.However, the specific details of the on the training data are not disclosed by OpenAI.  But remember, because it learned from so much text, it might sometimes give answers that seem right but might not be completely accurate.</p>";
+        } else if (model === 'Blenderbot') {
+            modelDescription.innerHTML = "<p>BlenderBot is an advanced AI chatbot designed by Facebook. It's trained using a method called \"Reinforcement Learning from Human Feedback (RLHF)\", which allows it to have more natural conversations with users. Unlike other models, BlenderBot can engage in extended discussions, making it feel more like a human partner. However, it may sometimes produce responses that don't fully make sense or might be unrelated, as it relies on patterns it learned from various conversations.</p>";
+        } else if (model === 'DialoGPT') {
+            modelDescription.innerHTML = "<p>DialoGPT is a conversational AI model developed by OpenAI. It's trained on a mix of licensed data, human-generated text, and content from the internet, including Reddit. Using \"transformer neural networks\",' it learns language patterns and context to generate responses in conversations. While it aims to provide accurate answers, its wide training scope means some responses might appear correct but not entirely precise.</p>";
         } else if (model === 'MentalBERT') {
-            modelDescription.innerHTML = "<p>Description: MentalBERT is a language model trained to understand and analyze text related to mental health. It can assist in tasks such as sentiment analysis, identifying mental health issues, and providing support resources.</p>";
+            modelDescription.innerHTML = "<p>MentalBERT is a language model trained to understand and analyze text related to mental health. It can assist in tasks such as sentiment analysis, identifying mental health issues, and providing support resources.</p>";
         } else if (model === 'SEQ-SEQ') {
-            modelDescription.innerHTML = "<p>Description: SEQ-SEQ is a sequence-to-sequence model architecture commonly used in machine translation, summarization, and other sequence generation tasks. It consists of an encoder-decoder framework that maps an input sequence to an output sequence.</p>";
+            modelDescription.innerHTML = "<p>SEQ-SEQ is a sequence-to-sequence model architecture commonly used in machine translation, summarization, and other sequence generation tasks. It consists of an encoder-decoder framework that maps an input sequence to an output sequence.</p>";
         }
 
         // Set the selected model value
