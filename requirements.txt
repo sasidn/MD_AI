@@ -14,7 +14,10 @@ nltk
 python-dotenv
 nltk
 openpyxl
-pip install bert-extractive-summarizer
+vaderSentiment
+
+
+
 
 
 
