@@ -4,7 +4,7 @@ from nltk.stem.porter import PorterStemmer
 stemmer = PorterStemmer()
 
 # Download the punkt tokenizer from NLTK
-# nltk.download('punkt')
+#nltk.download('punkt')
 
 # Initialize the stemmer
 stemmer = PorterStemmer()

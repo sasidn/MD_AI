@@ -3,8 +3,8 @@ import json
 
 import torch
 
-from model import NeuralNet
-from nltk_utils import bag_of_words, tokenize
+from NN import NeuralNet
+from utils import bag_of_words, tokenize
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -13,7 +13,7 @@ def read_json_file(file_path: str) -> dict:
         data = json.load(file)
     return data
 
-FILE = "data.pth"
+FILE = "../data/data.pth"
 data = torch.load(FILE)
 
 input_size = data["input_size"]
@@ -29,8 +29,10 @@ model.eval()
 
 bot_name = "Nex"
 # Load the intents data from the JSON file
-with open('intents.json', 'r') as json_data:
-    intents = json.load(json_data)
+json_file_path = '../data/intents.json'
+
+with open(json_file_path, 'r') as f:
+    intents = json.load(f)
 
 def save_knowledge_base(file_path: str, data: dict):
     with open(file_path, 'w') as file:

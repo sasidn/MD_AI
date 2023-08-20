@@ -86,8 +86,8 @@
             <div class="model-card" onclick="selectModel('DialoGPT', this)">
                 <p>DialoGPT</p>
             </div>
-            <div class="model-card" onclick="selectModel('Rule Based', this)">
-                <p>Rule Based</p>
+            <div class="model-card" onclick="selectModel('CouncelChat', this)">
+                <p>CouncelChat/p>
             </div>
             <div class="model-card" onclick="selectModel('NLP Chatbot', this)">
                 <p>NLP chatbot</p>
@@ -120,10 +120,10 @@
             modelDescription.innerHTML = "<p>BlenderBot is an advanced AI chatbot designed by Facebook. It's trained using a method called \"Reinforcement Learning from Human Feedback (RLHF)\", which allows it to have more natural conversations with users. Unlike other models, BlenderBot can engage in extended discussions, making it feel more like a human partner. However, it may sometimes produce responses that don't fully make sense or might be unrelated, as it relies on patterns it learned from various conversations.</p>";
         } else if (model === 'DialoGPT') {
             modelDescription.innerHTML = "<p>DialoGPT is a conversational AI model developed by OpenAI. It's trained on a mix of licensed data, human-generated text, and content from the internet, including Reddit. Using \"transformer neural networks\",' it learns language patterns and context to generate responses in conversations. While it aims to provide accurate answers, its wide training scope means some responses might appear correct but not entirely precise.</p>";
-        } else if (model === 'MentalBERT') {
-            modelDescription.innerHTML = "<p>MentalBERT is a language model trained to understand and analyze text related to mental health. It can assist in tasks such as sentiment analysis, identifying mental health issues, and providing support resources.</p>";
-        } else if (model === 'SEQ-SEQ') {
-            modelDescription.innerHTML = "<p>SEQ-SEQ is a sequence-to-sequence model architecture commonly used in machine translation, summarization, and other sequence generation tasks. It consists of an encoder-decoder framework that maps an input sequence to an output sequence.</p>";
+        } else if (model === 'CouncelChat') {
+            modelDescription.innerHTML = "<p>The chatbot employs advanced techniques such as sentiment analysis, categorization, and response generation to initiate, understand, and guide conversations. Trained on council chat datasets, it assesses user sentiment, classifies queries, utilizes technical algorithms like BERT for response generation, and acknowledges emotions, all while smoothly managing the conversation flow.</p>";
+        } else if (model === 'NLP chatbot') {
+            modelDescription.innerHTML = "<p>NLP chatbot employs techniques such as tokenization, stemming, and bag of words, alongside a neural network, to understand and generate responses. It processes intent data, undergoes model training, and delivers pertinent responses with a measure of confidence.</p>";
         }
 
         // Set the selected model value
