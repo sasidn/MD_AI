@@ -17,6 +17,9 @@ openpyxl
 vaderSentiment
 
 
+chatterbot
+imbalanced-learn
+
 
 
 

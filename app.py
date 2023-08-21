@@ -33,7 +33,7 @@ app.secret_key = secret_key
 
 @app.route('/')
 def index():
-    return render_template('model.html')
+    return render_template('home.html')
 
 
 def create_user(username, email, password):
