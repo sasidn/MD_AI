@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="recommended-articles-container">
+        <h3>Recommended Articles</h3>
+        <ul>
+            {% for article in recommended_articles %}
+            <li><a href="{{ article[2] }}" target="_blank">{{ article[1] }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="recommended-videos-container">
+        <h3>Recommended Videos</h3>
+        <ul>
+            {% for video in recommended_videos %}
+            <li><a href="{{ video[2] }}" target="_blank">{{ video[1] }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</body>
+</html>

@@ -97,3 +97,28 @@ class CBT_Trigger(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     Tags = db.Column(db.String(255))
     words = db.Column(db.String(255))
+
+class RecommendedArticle(db.Model):
+    __tablename__ = 'recommended_articles'
+    ArticleId = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(255))
+    WebLink = db.Column(db.String(255))
+
+class RecommendedVideo(db.Model):
+    __tablename__ = 'recommended_videos'
+    Id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(255))
+    link = db.Column(db.String(255))
+
+
+
+class RecommendedBook(db.Model):
+    __tablename__ = 'recommended_books'
+    Id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(255))
+
+class RecommendedPodcast(db.Model):
+    __tablename__ = 'recommended_podcasts'
+    Id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(255))
+    link = db.Column(db.String(255))
