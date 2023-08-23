@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot Feedback</title>
+  <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .question-container {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .question-label {
+            margin-right: 10px;
+        }
+        .radio-label {
+            content: "\25A2";
+            font-size: 20px;
+            padding: 5px;
+            border: 2px solid #ccc;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+        }
+        .radio-input {
+            display: none;
+        }
+        .radio-label.selected {
+            content: "\25A3";
+            background-color: #3498db;
+            border-color: #3498db;
+            color: #fff;
+        }
+  </style>
+</head>
+<body>
+    <form>
+        <div class="question-container">
+            <p class="question-label">1. The chatbot's personality was realistic and engaging:</p>
+            <input type="radio" name="q1" value="1" id="q1_1" class="radio-input">
+            <label for="q1_1" class="radio-label">Strongly Disagree</label>
+            <input type="radio" name="q1" value="2" id="q1_2" class="radio-input">
+            <label for="q1_2" class="radio-label">Disagree</label>
+            <input type="radio" name="q1" value="3" id="q1_3" class="radio-input">
+            <label for="q1_3" class="radio-label">Neutral</label>
+            <input type="radio" name="q1" value="4" id="q1_4" class="radio-input">
+            <label for="q1_4" class="radio-label">Agree</label>
+            <input type="radio" name="q1" value="5" id="q1_5" class="radio-input">
+            <label for="q1_5" class="radio-label">Strongly Agree</label>
+        </div>
+        <div class="question-container">
+            <p class="question-label">2. The chatbot seemed too robotic:</p>
+            <input type="radio" name="q1" value="1" id="q1_1" class="radio-input">
+            <label for="q1_1" class="radio-label">Strongly Disagree</label>
+            <input type="radio" name="q1" value="2" id="q1_2" class="radio-input">
+            <label for="q1_2" class="radio-label">Disagree</label>
+            <input type="radio" name="q1" value="3" id="q1_3" class="radio-input">
+            <label for="q1_3" class="radio-label">Neutral</label>
+            <input type="radio" name="q1" value="4" id="q1_4" class="radio-input">
+            <label for="q1_4" class="radio-label">Agree</label>
+            <input type="radio" name="q1" value="5" id="q1_5" class="radio-input">
+            <label for="q1_5" class="radio-label">Strongly Agree</label>
+        </div>
+        <div class="question-container">
+              <p class="question-label">3.The chatbot was welcoming during initial setup:</p>
+              <input type="radio" name="q1" value="1" id="q1_1" class="radio-input">
+              <label for="q1_1" class="radio-label">Strongly Disagree</label>
+              <input type="radio" name="q1" value="2" id="q1_2" class="radio-input">
+              <label for="q1_2" class="radio-label">Disagree</label>
+              <input type="radio" name="q1" value="3" id="q1_3" class="radio-input">
+              <label for="q1_3" class="radio-label">Neutral</label>
+              <input type="radio" name="q1" value="4" id="q1_4" class="radio-input">
+              <label for="q1_4" class="radio-label">Agree</label>
+              <input type="radio" name="q1" value="5" id="q1_5" class="radio-input">
+              <label for="q1_5" class="radio-label">Strongly Agree</label>
+        </div>
+        <div class="question-container">
+              <p class="question-label">4.The chatbot seemed very unfriendly:</p>
+              <input type="radio" name="q1" value="1" id="q1_1" class="radio-input">
+              <label for="q1_1" class="radio-label">Strongly Disagree</label>
+              <input type="radio" name="q1" value="2" id="q1_2" class="radio-input">
+              <label for="q1_2" class="radio-label">Disagree</label>
+              <input type="radio" name="q1" value="3" id="q1_3" class="radio-input">
+              <label for="q1_3" class="radio-label">Neutral</label>
+              <input type="radio" name="q1" value="4" id="q1_4" class="radio-input">
+              <label for="q1_4" class="radio-label">Agree</label>
+              <input type="radio" name="q1" value="5" id="q1_5" class="radio-input">
+              <label for="q1_5" class="radio-label">Strongly Agree</label>
+        </div>
+        <div class="question-container">
+              <p class="question-label">5.The chatbot explained its scope and purpose well:</p>
+              <input type="radio" name="q1" value="1" id="q1_1" class="radio-input">
+              <label for="q1_1" class="radio-label">Strongly Disagree</label>
+              <input type="radio" name="q1" value="2" id="q1_2" class="radio-input">
+              <label for="q1_2" class="radio-label">Disagree</label>
+              <input type="radio" name="q1" value="3" id="q1_3" class="radio-input">
+              <label for="q1_3" class="radio-label">Neutral</label>
+              <input type="radio" name="q1" value="4" id="q1_4" class="radio-input">
+              <label for="q1_4" class="radio-label">Agree</label>
+              <input type="radio" name="q1" value="5" id="q1_5" class="radio-input">
+              <label for="q1_5" class="radio-label">Strongly Agree</label>
+        </div>
+        <div class="question-container">
+              <p class="question-label">6.The chatbot gave no indication as to its purpose:</p>
+              <input type="radio" name="q1" value="1" id="q1_1" class="radio-input">
+              <label for="q1_1" class="radio-label">Strongly Disagree</label>
+              <input type="radio" name="q1" value="2" id="q1_2" class="radio-input">
+              <label for="q1_2" class="radio-label">Disagree</label>
+              <input type="radio" name="q1" value="3" id="q1_3" class="radio-input">
+              <label for="q1_3" class="radio-label">Neutral</label>
+              <input type="radio" name="q1" value="4" id="q1_4" class="radio-input">
+              <label for="q1_4" class="radio-label">Agree</label>
+              <input type="radio" name="q1" value="5" id="q1_5" class="radio-input">
+              <label for="q1_5" class="radio-label">Strongly Agree</label>
+        </div>
+        <div class="question-container">
+              <p class="question-label">7.The chatbot was easy to navigate:</p>
+              <input type="radio" name="q1" value="1" id="q1_1" class="radio-input">
+              <label for="q1_1" class="radio-label">Strongly Disagree</label>
+              <input type="radio" name="q1" value="2" id="q1_2" class="radio-input">
+              <label for="q1_2" class="radio-label">Disagree</label>
+              <input type="radio" name="q1" value="3" id="q1_3" class="radio-input">
+              <label for="q1_3" class="radio-label">Neutral</label>
+              <input type="radio" name="q1" value="4" id="q1_4" class="radio-input">
+              <label for="q1_4" class="radio-label">Agree</label>
+              <input type="radio" name="q1" value="5" id="q1_5" class="radio-input">
+              <label for="q1_5" class="radio-label">Strongly Agree</label>
+        </div>
+        <div class="question-container">
+              <p class="question-label">8.It would be easy to get confused when using the chatbot:</p>
+              <input type="radio" name="q1" value="1" id="q1_1" class="radio-input">
+              <label for="q1_1" class="radio-label">Strongly Disagree</label>
+              <input type="radio" name="q1" value="2" id="q1_2" class="radio-input">
+              <label for="q1_2" class="radio-label">Disagree</label>
+              <input type="radio" name="q1" value="3" id="q1_3" class="radio-input">
+              <label for="q1_3" class="radio-label">Neutral</label>
+              <input type="radio" name="q1" value="4" id="q1_4" class="radio-input">
+              <label for="q1_4" class="radio-label">Agree</label>
+              <input type="radio" name="q1" value="5" id="q1_5" class="radio-input">
+              <label for="q1_5" class="radio-label">Strongly Agree</label>
+        </div>
+        <div class="question-container">
+              <p class="question-label">9.The chatbot understood me well :</p>
+              <input type="radio" name="q1" value="1" id="q1_1" class="radio-input">
+              <label for="q1_1" class="radio-label">Strongly Disagree</label>
+              <input type="radio" name="q1" value="2" id="q1_2" class="radio-input">
+              <label for="q1_2" class="radio-label">Disagree</label>
+              <input type="radio" name="q1" value="3" id="q1_3" class="radio-input">
+              <label for="q1_3" class="radio-label">Neutral</label>
+              <input type="radio" name="q1" value="4" id="q1_4" class="radio-input">
+              <label for="q1_4" class="radio-label">Agree</label>
+              <input type="radio" name="q1" value="5" id="q1_5" class="radio-input">
+              <label for="q1_5" class="radio-label">Strongly Agree</label>
+        </div>
+        <div class="question-container">
+              <p class="question-label">10.The chatbot failed to recognise a lot of my inputs:</p>
+              <input type="radio" name="q1" value="1" id="q1_1" class="radio-input">
+              <label for="q1_1" class="radio-label">Strongly Disagree</label>
+              <input type="radio" name="q1" value="2" id="q1_2" class="radio-input">
+              <label for="q1_2" class="radio-label">Disagree</label>
+              <input type="radio" name="q1" value="3" id="q1_3" class="radio-input">
+              <label for="q1_3" class="radio-label">Neutral</label>
+              <input type="radio" name="q1" value="4" id="q1_4" class="radio-input">
+              <label for="q1_4" class="radio-label">Agree</label>
+              <input type="radio" name="q1" value="5" id="q1_5" class="radio-input">
+              <label for="q1_5" class="radio-label">Strongly Agree</label>
+        </div>
+        <div class="question-container">
+              <p class="question-label">11.Chatbot responses were useful, appropriate and informative:</p>
+              <input type="radio" name="q1" value="1" id="q1_1" class="radio-input">
+              <label for="q1_1" class="radio-label">Strongly Disagree</label>
+              <input type="radio" name="q1" value="2" id="q1_2" class="radio-input">
+              <label for="q1_2" class="radio-label">Disagree</label>
+              <input type="radio" name="q1" value="3" id="q1_3" class="radio-input">
+              <label for="q1_3" class="radio-label">Neutral</label>
+              <input type="radio" name="q1" value="4" id="q1_4" class="radio-input">
+              <label for="q1_4" class="radio-label">Agree</label>
+              <input type="radio" name="q1" value="5" id="q1_5" class="radio-input">
+              <label for="q1_5" class="radio-label">Strongly Agree</label>
+        </div>
+        <div class="question-container">
+              <p class="question-label">12.Chatbot responses were irrelevant:</p>
+              <input type="radio" name="q1" value="1" id="q1_1" class="radio-input">
+              <label for="q1_1" class="radio-label">Strongly Disagree</label>
+              <input type="radio" name="q1" value="2" id="q1_2" class="radio-input">
+              <label for="q1_2" class="radio-label">Disagree</label>
+              <input type="radio" name="q1" value="3" id="q1_3" class="radio-input">
+              <label for="q1_3" class="radio-label">Neutral</label>
+              <input type="radio" name="q1" value="4" id="q1_4" class="radio-input">
+              <label for="q1_4" class="radio-label">Agree</label>
+              <input type="radio" name="q1" value="5" id="q1_5" class="radio-input">
+              <label for="q1_5" class="radio-label">Strongly Agree</label>
+        </div>
+        <div class="question-container">
+              <p class="question-label">13.The chatbot coped well with any errors or mistakes :</p>
+              <input type="radio" name="q1" value="1" id="q1_1" class="radio-input">
+              <label for="q1_1" class="radio-label">Strongly Disagree</label>
+              <input type="radio" name="q1" value="2" id="q1_2" class="radio-input">
+              <label for="q1_2" class="radio-label">Disagree</label>
+              <input type="radio" name="q1" value="3" id="q1_3" class="radio-input">
+              <label for="q1_3" class="radio-label">Neutral</label>
+              <input type="radio" name="q1" value="4" id="q1_4" class="radio-input">
+              <label for="q1_4" class="radio-label">Agree</label>
+              <input type="radio" name="q1" value="5" id="q1_5" class="radio-input">
+              <label for="q1_5" class="radio-label">Strongly Agree</label>
+        </div>
+        <div class="question-container">
+              <p class="question-label">14.The chatbot seemed unable to handle any errors:</p>
+              <input type="radio" name="q1" value="1" id="q1_1" class="radio-input">
+              <label for="q1_1" class="radio-label">Strongly Disagree</label>
+              <input type="radio" name="q1" value="2" id="q1_2" class="radio-input">
+              <label for="q1_2" class="radio-label">Disagree</label>
+              <input type="radio" name="q1" value="3" id="q1_3" class="radio-input">
+              <label for="q1_3" class="radio-label">Neutral</label>
+              <input type="radio" name="q1" value="4" id="q1_4" class="radio-input">
+              <label for="q1_4" class="radio-label">Agree</label>
+              <input type="radio" name="q1" value="5" id="q1_5" class="radio-input">
+              <label for="q1_5" class="radio-label">Strongly Agree</label>
+        </div>
+        <div class="question-container">
+              <p class="question-label">15.The chatbot was welcoming during initial setup:</p>
+              <input type="radio" name="q1" value="1" id="q1_1" class="radio-input">
+              <label for="q1_1" class="radio-label">Strongly Disagree</label>
+              <input type="radio" name="q1" value="2" id="q1_2" class="radio-input">
+              <label for="q1_2" class="radio-label">Disagree</label>
+              <input type="radio" name="q1" value="3" id="q1_3" class="radio-input">
+              <label for="q1_3" class="radio-label">Neutral</label>
+              <input type="radio" name="q1" value="4" id="q1_4" class="radio-input">
+              <label for="q1_4" class="radio-label">Agree</label>
+              <input type="radio" name="q1" value="5" id="q1_5" class="radio-input">
+              <label for="q1_5" class="radio-label">Strongly Agree</label>
+        </div>
+        <div class="question-container">
+              <p class="question-label">16.The chatbot was very easy to use:</p>
+              <input type="radio" name="q1" value="1" id="q1_1" class="radio-input">
+              <label for="q1_1" class="radio-label">Strongly Disagree</label>
+              <input type="radio" name="q1" value="2" id="q1_2" class="radio-input">
+              <label for="q1_2" class="radio-label">Disagree</label>
+              <input type="radio" name="q1" value="3" id="q1_3" class="radio-input">
+              <label for="q1_3" class="radio-label">Neutral</label>
+              <input type="radio" name="q1" value="4" id="q1_4" class="radio-input">
+              <label for="q1_4" class="radio-label">Agree</label>
+              <input type="radio" name="q1" value="5" id="q1_5" class="radio-input">
+              <label for="q1_5" class="radio-label">Strongly Agree</label>
+        </div>
+        <div class="question-container">
+              <p class="question-label">17.The chatbot was very complex:</p>
+              <input type="radio" name="q1" value="1" id="q1_1" class="radio-input">
+              <label for="q1_1" class="radio-label">Strongly Disagree</label>
+              <input type="radio" name="q1" value="2" id="q1_2" class="radio-input">
+              <label for="q1_2" class="radio-label">Disagree</label>
+              <input type="radio" name="q1" value="3" id="q1_3" class="radio-input">
+              <label for="q1_3" class="radio-label">Neutral</label>
+              <input type="radio" name="q1" value="4" id="q1_4" class="radio-input">
+              <label for="q1_4" class="radio-label">Agree</label>
+              <input type="radio" name="q1" value="5" id="q1_5" class="radio-input">
+              <label for="q1_5" class="radio-label">Strongly Agree</label>
+        </div>
+
+
+    </form>
+    <script>
+        const form = document.querySelector("form");
+        const labels = form.querySelectorAll(".radio-label");
+
+        labels.forEach((label, index) => {
+            label.addEventListener("click", () => {
+                form.querySelector(`input[name="q${index + 1}"]`).checked = true;
+                label.classList.add("selected");
+                if (index === labels.length - 1) {
+                    setTimeout(() => form.submit(), 500);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

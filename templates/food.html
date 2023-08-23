@@ -8,68 +8,75 @@
 
     <script src="https://kit.fontawesome.com/1b2b6a64da.js" crossorigin="anonymous"></script>
 
-    <link rel="icon" href="../Images/B_icon01.png">
-
-    <link rel="stylesheet" href="../otherStylesheet/common.css">
-    <link rel="stylesheet" href="../otherStylesheet/food.css">
-
 </head>
+<style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #D9DCD6;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: normal;
+            color: #2F6690; /* Slightly lighter blue */
+            text-align: left;
+        }
+
+
+        .container-img {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .food-desp {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .food-desp h2 {
+            font-size: 24px;
+            color: #3A7CA5;
+        }
+
+        .food-desp p {
+            color: #3A7CA5;
+            margin-top: 10px;
+        }
+
+        .rev {
+            flex-direction: row-reverse;
+        }
+
+        .side {
+            background-color: #FFDADA;
+        }
+        .food-cont {
+            display: flex;
+            background-color: #3A7CA5;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .container-img {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .rev {
+            flex-direction: row-reverse;
+        }
+
+        .side {
+            background-color: #FFDADA;
+        }
+</style>
 <body>
 
 
     <div class="land-cont">
-
-           <!-- +++ HEADER +++ -->
-
-           <div class="header">
-            <div class="logo-cantainer">
-                <h2 class="logo">MindNex.</h2>
-            </div>
-
-            <div class="nav-and-btn-cont">
-                <div class="nav-list-cont">
-                    <ul class="nav-ul">
-                        <li><a href="../index.html" >HOME</a></li>
-                        <li><a href="#FOODS">FOODS</a></li>
-                        <li><a href="#FOOTER">CONTACT</a></li>
-                    </ul>
-                </div>
-
-
-
-                <div class="hamBurger">
-                    <!-- <div class="lines line1"></div>
-                    <div class="lines line2"></div>
-                    <div class="lines line2 mid-line"></div>
-                    <div class="lines line3"></div> -->
-                    <diV class="line line1"></diV>
-                    <div class="mid-line-cont">
-                        <div class="line mid-line1"></div>
-                        <div class="line mid-line2"></div>
-                    </div>
-                    <diV class="line line3"></diV>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="mobile-view-nav-cont" id="mobile-nav">
-
-            <div class="mobile-view-nav-head">
-                <p>Menu</p>
-            </div>
-
-            <div class="mobile-view-nav-list">
-
-                <ul>
-                    <li class="mobile-view-list"><a href="../index.html" >HOME</a></li>
-                    <li class="mobile-view-list"><a href="#FOODS">FOODS</a></li>
-                    <li class="mobile-view-list"><a href="#FOOTER">CONTACT</a></li>
-                </ul>
-
-            </div>
-
-        </div>
 
         <div class="land-img-cont">
             <div class="food-page-head">
@@ -106,15 +113,13 @@
             <div class="list-of-food">
 
                 <div class="food-cont">
-
                     <div class="container-img img-1"></div>
-
                     <div class="food-desp">
                         <h2>Salmon</h2>
-                        <p>While fish, in general, is a healthy choice, salmon is at the top of the list.
-                             It’s a “fatty” fish, containing high amounts of omega-3 fatty acids, which have been linked to a
-                             reduction in mental disorders such as depression. Omega-3s have been shown to boost learning and memory as well.
-
+                        <p>
+                            While fish, in general, is a healthy choice, salmon is at the top of the list.
+                            It’s a “fatty” fish, containing high amounts of omega-3 fatty acids, which have been linked to a
+                            reduction in mental disorders such as depression. Omega-3s have been shown to boost learning and memory as well.
                             Salmon also has a naturally high-occurring amount of vitamin D, which is often added to foods and has been linked to lower rates of depression.
                             Other types of fish with high Omega-3 counts include tuna, mackerel, and herring.
                         </p>
@@ -122,20 +127,17 @@
                 </div>
 
                 <div class="food-cont rev">
-
                     <div class="container-img img-2 side"></div>
-
                     <div class="food-desp">
                         <h2>Grains</h2>
                         <p>
                             Many types of food fall under this category, like beans, soy, oats and wild rice.
                             While your body and brain utilize carbohydrates for energy, too often we consume simple carbs,
-                             which lead to blood sugar spikes. Foods classified as whole grains contain complex carbohydrates,
-                              which leads to glucose being produced more slowly, as a more even and consistent source of energy.
-
+                            which lead to blood sugar spikes. Foods classified as whole grains contain complex carbohydrates,
+                            which leads to glucose being produced more slowly, as a more even and consistent source of energy.
                             Also, whole grains help the brain absorb tryptophan, which means that when eaten in conjunction
                             with foods like chicken and turkey, you can further reduce symptoms of depression and anxiety while
-                             boosting brain function.
+                            boosting brain function.
                         </p>
                     </div>
                 </div>
@@ -278,34 +280,7 @@
 
 
 
-    <!-- ++++++++++++++++++++++ FOOTER ++++++++++++++++++++++++++ -->
 
-    <a id="FOOTER"></a>
-    <div class="footer">
-        <div class="footer-text-cont">
-            <h2>Get in touch.</h2>
-            <P>I would love to hear from you friend &#60;3</P>
-
-        </div>
-
-        <div class="social-icon-cont">
-            <div class="social-head">
-                <h2 class="logo footer-logo">MentalNex.</h2>
-            </div>
-
-            <div class="icons">
-                <ul>
-                    <li><a href="https://github.com/meaviral17"><i class="fab fa-github-square"></i></a></li>
-                    <li><a href="mailto:meaviral17@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/meaviralsrivastava/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            </div>
-        </div>
-
-        <p class="copy-rights">Thank You :)</p>
-    </div>
-
-    <script src="../otherJS/hamberger.js"></script>
-    <script src="../otherJS/food&exercise.js"></script>
 
 </body>
 </html>
